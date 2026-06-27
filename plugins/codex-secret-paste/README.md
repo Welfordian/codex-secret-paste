@@ -18,6 +18,8 @@ npm --prefix "$PWD/plugins/codex-secret-paste" run install:helper
 
 macOS will need Accessibility permission for the helper because it observes the configured shortcut and sends `Cmd+V` to paste the placeholder into Codex.
 
+The installer downloads a prebuilt helper from GitHub Releases and verifies its SHA-256 checksum. Local Swift/Xcode tooling is only needed if you set `CODEX_SECRET_PASTE_BUILD_FROM_SOURCE=1` or need an offline source build.
+
 ## Configuration
 
 The default shortcut is `CMD+SHIFT+V`. The shortcut is stored in:

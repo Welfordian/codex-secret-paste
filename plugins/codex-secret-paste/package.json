@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "build:helper": "bash scripts/build-helper.sh",
+    "build:helper:release": "bash scripts/build-release-helper.sh",
+    "download:helper": "bash scripts/download-helper.sh",
+    "ensure:helper": "bash scripts/ensure-helper.sh",
     "install:helper": "bash scripts/install-helper.sh",
     "uninstall:helper": "bash scripts/uninstall-helper.sh",
     "status:helper": "bash scripts/helper-status.sh"

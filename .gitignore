@@ -1,3 +1,4 @@
 .DS_Store
 plugins/codex-secret-paste/bin/
+plugins/codex-secret-paste/dist/
 plugins/codex-secret-paste/node_modules/

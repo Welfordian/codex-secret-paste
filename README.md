@@ -15,7 +15,7 @@ Codex sees only the placeholder. The plugin MCP tools can later materialize the 
 - macOS
 - Codex
 - Node.js
-- Xcode command line tools or Swift compiler
+- Network access to GitHub Releases for the prebuilt macOS helper
 
 ## Install From This Repo
 
@@ -29,6 +29,12 @@ npm --prefix "$PWD/plugins/codex-secret-paste" run install:helper
 ```
 
 Grant macOS Accessibility permission to `codex-secret-paste-helper` if prompted.
+
+The installer downloads a prebuilt helper binary from this repo's GitHub Releases and verifies its SHA-256 checksum. If you prefer to build the helper locally, or need an offline fallback, install Xcode command line tools or another Swift compiler and run:
+
+```bash
+CODEX_SECRET_PASTE_BUILD_FROM_SOURCE=1 npm --prefix "$PWD/plugins/codex-secret-paste" run install:helper
+```
 
 ## Usage
 

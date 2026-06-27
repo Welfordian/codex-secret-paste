@@ -9,7 +9,7 @@ CONFIG_DIR="$HOME/.codex-secret-paste"
 CONFIG_FILE="$CONFIG_DIR/config.json"
 UID_VALUE="$(id -u)"
 
-"$PLUGIN_ROOT/scripts/build-helper.sh"
+"$PLUGIN_ROOT/scripts/ensure-helper.sh"
 
 mkdir -p "$HOME/Library/LaunchAgents"
 mkdir -p "$CONFIG_DIR"
