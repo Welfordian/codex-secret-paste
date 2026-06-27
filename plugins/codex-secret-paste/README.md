@@ -8,12 +8,12 @@ Codex Secret Paste lets you press the configured secure-paste shortcut in the Co
 
 The raw clipboard text is stored in macOS Keychain by the helper. Codex only sees the handle. The MCP tools can later materialize that handle into a task-scoped env file and clean it up when the task is finished.
 
-## Setup
+## Setup From Repository Root
 
 ```bash
-npm --prefix ~/plugins/codex-secret-paste run build:helper
-npm --prefix ~/plugins/codex-secret-paste run install:helper
-codex plugin add codex-secret-paste@personal
+codex plugin marketplace add "$PWD"
+codex plugin add codex-secret-paste@secret-paste
+npm --prefix "$PWD/plugins/codex-secret-paste" run install:helper
 ```
 
 macOS will need Accessibility permission for the helper because it observes the configured shortcut and sends `Cmd+V` to paste the placeholder into Codex.

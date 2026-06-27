@@ -3,9 +3,10 @@
   "version": "0.1.0+codex.20260627111220",
   "description": "Securely paste secrets into the Codex composer as redacted handles.",
   "author": {
-    "name": "Local developer"
+    "name": "Welfordian"
   },
-  "homepage": "https://openai.com/",
+  "homepage": "https://github.com/Welfordian/codex-secret-paste",
+  "repository": "https://github.com/Welfordian/codex-secret-paste",
   "license": "MIT",
   "keywords": [
     "codex",
@@ -20,7 +21,7 @@
     "displayName": "Codex Secret Paste",
     "shortDescription": "Paste secrets into Codex as safe placeholders",
     "longDescription": "Codex Secret Paste adds a macOS secure-paste helper and local MCP tools so secrets can be pasted into the Codex composer as redacted @secret(...) handles, then materialized into task-scoped env files without exposing plaintext in chat.",
-    "developerName": "Local developer",
+    "developerName": "Welfordian",
     "category": "Developer Tools",
     "capabilities": [
       "Interactive",
