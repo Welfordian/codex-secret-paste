@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "codex-secret-paste": {
+      "command": "node",
+      "args": [
+        "./mcp/server.mjs"
+      ],
+      "cwd": "."
+    }
+  }
+}

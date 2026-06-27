@@ -1,0 +1,20 @@
+{
+  "name": "secret-paste",
+  "interface": {
+    "displayName": "Secret Paste"
+  },
+  "plugins": [
+    {
+      "name": "codex-secret-paste",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-secret-paste"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

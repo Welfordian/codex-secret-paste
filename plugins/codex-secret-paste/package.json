@@ -1,0 +1,13 @@
+{
+  "name": "codex-secret-paste",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build:helper": "bash scripts/build-helper.sh",
+    "install:helper": "bash scripts/install-helper.sh",
+    "uninstall:helper": "bash scripts/uninstall-helper.sh",
+    "status:helper": "bash scripts/helper-status.sh"
+  }
+}
